@@ -1,0 +1,36 @@
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+    gap: 30px;
+}
+
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    color: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: color var(--time), border-color var(--time);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    color: var(--accent-txt-cl);
+    border-color: var(--accent-txt-cl);
+}
+
+.clients-icon {
+    fill: currentColor;
+}
