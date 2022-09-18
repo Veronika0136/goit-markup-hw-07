@@ -5,5 +5,5 @@
 }
 
 .card-set-item {
-    flex-basis: calc((100%- var(--indent) * (var(--itens)-1)) / var(--itens));
+    flex-basis: calc((100% - var(--indent) * (var(--itens) - 1)) / var(--itens));
 }
