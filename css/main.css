@@ -277,12 +277,6 @@ body {
   background: #188ce8;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #ececec;
-}
-
 .header-logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -302,6 +296,12 @@ body {
 
 .log {
   color: var(--accent-txt-cl);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-nav {
