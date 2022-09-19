@@ -8,11 +8,8 @@
 .portfolio-filtr-btn {
     background: var(--light-bg-cl);
     font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(26 / 16);
+    @include font (500, 16px, 26px, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     cursor: pointer;
     color: #212121;
     display: flex;
