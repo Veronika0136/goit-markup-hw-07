@@ -14,9 +14,7 @@
 }
 
 .clients-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %centered;
     width: 170px;
     height: 92px;
     color: #afb1b8;
