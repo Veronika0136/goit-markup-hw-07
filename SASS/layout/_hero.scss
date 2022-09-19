@@ -12,7 +12,7 @@
     background-size: cover;
 }
 
-.hero-title {
+.hero__title {
     @include font (900, 44px, 60px, 0.06em);
     text-align: center;
     text-transform: uppercase;
