@@ -2,16 +2,16 @@
     padding-bottom: 0;
 }
 
-.features-list {
+.features__list {
     display: flex;
     gap: 30px;
 }
 
-.features-list-item {
+.features__item {
     flex-basis: 270px;
 }
 
-.features-thumb {
+.features__thumb {
     @extend %centered;
     width: 270px;
     height: 120px;
@@ -20,12 +20,12 @@
     margin-bottom: 30px;
 }
 
-.features-subtitle {
+.features__subtitle {
     @include font (700, 14px, 16px, 0.03em);
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 
-.features-txt {
+.features__txt {
     @include font (400, 14px, 24px, 0.03em);
 }
