@@ -59,13 +59,10 @@
 }
 
 .register-form-title {
+    @include font (700, 20px, 23px, 0.03em);
     display: block;
     margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: calc(23 / 20);
     text-align: center;
-    letter-spacing: 0.03em;
     color: #212121;
 }
 
@@ -84,14 +81,11 @@
 }  
 
 .register-form-label {
+    @include font (400, 12px, 14px, 0.01em);
     display: block;
     text-align: left;
     margin-bottom: 4px;
     padding-left: 3px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: 0.01em;
 }
 
 .register-form-input,
@@ -152,10 +146,7 @@
 }
 }
 .register-form-agreement-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
+    @include font (400, 14px, 24px, 0.03em);
     user-select: none;
     text-underline-position: under;
 }
@@ -175,10 +166,8 @@
     background-color: var(--accent-txt-cl);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: #ffffff;
-    font-weight: 700;
-    line-height: calc(30 / 16);
+    @include font (700, 16px, 30px, 0.06em);
     text-align: center;
-    letter-spacing: 0.06em;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
