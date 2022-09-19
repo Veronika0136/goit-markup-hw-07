@@ -1,9 +1,9 @@
-.socials-list {
+.socials__list {
     @extend %centered;
     gap: 10px;
 }
 
-.socials-link {
+.socials__link {
     @extend %centered;
     color: #afb1b8;
     width: 44px;
@@ -19,6 +19,6 @@
 }
 }
 
-.socials-icon {
+.socials__icon {
     fill: currentColor;
 }
