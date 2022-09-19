@@ -37,15 +37,13 @@
 }
 }
 .modal-btn {
+    @extend %centered;
     position: absolute;
     top: 8px;
     right: 8px;
     width: 30px;
     height: 30px;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
@@ -133,11 +131,10 @@
 }
 
 .register-form-agreement {
-    display: flex;
-    align-items: center;
+    @extend %centered;
     gap: 8px;
     margin-bottom: 30px;
-    justify-content: center;
+    
 }
 
 .register-checkbox:checked+.register-icon .register-icon-uncheck {
