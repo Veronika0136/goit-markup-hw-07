@@ -23,12 +23,12 @@
     border: 1px solid #afb1b8;
     border-radius: 4px;
     transition: color var(--time), border-color var(--time);
-}
-
-.clients-link:hover,
-.clients-link:focus {
-    color: var(--accent-txt-cl);
-    border-color: var(--accent-txt-cl);
+  
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-cl);
+        border-color: var(--accent-txt-cl);
+    }
 }
 
 .clients-icon {
