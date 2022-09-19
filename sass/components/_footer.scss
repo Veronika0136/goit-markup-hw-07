@@ -52,17 +52,13 @@
 }
 
 .footer-socials-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %centered;
     gap: 10px;
     margin-top: 20px;
 }
 
 .footer-socials-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %centered;
     color: #ffffff;
     width: 44px;
     height: 44px;
@@ -87,9 +83,7 @@
 }
 
 .footer-subs-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %centered;
     gap: 12px;
     margin-top: 20px;
 }
