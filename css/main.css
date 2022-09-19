@@ -526,8 +526,8 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.3636363636;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 30px;
@@ -537,12 +537,12 @@ body {
 }
 
 .btn {
-  background-color: var(--accent-txt-cl);
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  background-color: var(--accent-txt-cl);
+  font-family: inherit;
   color: #ffffff;
   cursor: pointer;
   min-width: 200px;
@@ -582,27 +582,28 @@ body {
 }
 
 .features-subtitle {
-  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
   text-transform: uppercase;
 }
 
 .features-txt {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
 }
 
 .title {
-  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1666666667;
-  text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .special-list {
@@ -627,8 +628,8 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -650,21 +651,21 @@ body {
 }
 
 .team-name {
-  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
-  text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .team-prof {
-  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.1875;
-  text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
+  text-align: center;
 }
 
 .socials-list {
