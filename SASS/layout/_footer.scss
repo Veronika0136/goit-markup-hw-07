@@ -34,15 +34,20 @@
 
 .footer-address-list-item {
     margin-top: 9px;
-}
 
-.footer-address-list-item:not(:first-child) {
-    margin-top: 9px;
+    &:not(:first-child) {
+            margin-top: 9px;
+        }
 }
 
 .footer-address-list-item-link {
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--time);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-cl);
+        }
 }
 
 .footer-title {
@@ -72,11 +77,11 @@
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     transition: background-color var(--time);
-}
 
-.footer-socials-link:hover,
-.footer-socials-link:focus {
-    background-color: var(--accent-txt-cl);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-txt-cl);
+        }
 }
 
 .footer-socials-icon {
@@ -110,12 +115,12 @@
     padding-left: 15px;
     padding-right: 15px;
     outline: none;
-}
 
-.footer-subs-input:focus,
-.footer-subs-input:not(:placeholder-shown) {
-    border-color: #ffffff;
-    color: #ffffff;
+    &:focus,
+    &:not(:placeholder-shown) {
+        border-color: #ffffff;
+        color: #ffffff;
+        }
 }
 
 .footer-subs-btn {
@@ -137,9 +142,10 @@
     border: none;
     padding: 10px 28px;
     transition: background var(--time);
+
+    &:hover,
+    &:focus {
+        background: #188ce8;
+        }
 }
 
-.footer-subs-btn:hover,
-.footer-subs-btn:focus {
-    background: #188ce8;
-}
