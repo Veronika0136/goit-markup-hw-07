@@ -80,11 +80,11 @@
     position: relative;
     display: block;
     margin-bottom: 10px;
-}
 
-.register-form-wrap:last-child {
-    margin-bottom: 0;
-}
+    &:last-child {
+        margin-bottom: 0;
+    }
+}  
 
 .register-form-label {
     display: block;
@@ -184,9 +184,10 @@
     margin-right: auto;
     cursor: pointer;
     transition: background var(--time);
+
+    &:hover,
+    &:focus {
+            background: #188ce8;
+        }
 }
 
-.register-form-btn:hover,
-.register-form-btn:focus {
-    background: #188ce8;
-}
