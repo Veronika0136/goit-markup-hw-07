@@ -15,12 +15,12 @@
     background-color: #ffffff;
     border-radius: 50%;
     transition: color var(--time), background-color var(--time);
-}
 
-.socials-link:hover,
-.socials-link:focus {
+    &:hover,
+    &:focus {
     color: #ffffff;
     background-color: var(--accent-txt-cl);
+}
 }
 
 .socials-icon {
