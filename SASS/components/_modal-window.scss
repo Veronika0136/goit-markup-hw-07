@@ -8,12 +8,12 @@
 
     opacity: 1;
     transition: opacity 500ms ease-in-out 200ms, visibility 500ms ease-in-out 200ms;
-}
 
-.backdrop.is-hidden {
+    &.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    }
 }
 
 .modal {
@@ -30,13 +30,12 @@
     border-radius: 4px;
     opacity: 1;
     transition: transform 500ms ease-in-out 200ms, opacity 500ms ease-in-out 200ms;
-}
-
-.backdrop.is-hidden .modal {
+ 
+    .backdrop.is-hidden & {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.2) rotate(1turn);
 }
-
+}
 .modal-btn {
     position: absolute;
     top: 8px;
@@ -106,11 +105,15 @@
     padding-left: 42px;
     outline: transparent;
     transition: border-color var(--time);
+
+    &:focus {
+        border-color: var(--accent-txt-cl);
+        fill: var(--accent-txt-cl);
+
+    }
 }
 
-.register-form-input:focus,
 .register-form-input:focus+.register-form-icon,
-.register-form-message:focus,
 .register-form-message:not(:placeholder-shown) {
     border-color: var(--accent-txt-cl);
     fill: var(--accent-txt-cl);
@@ -146,12 +149,11 @@
     opacity: 0;
     transition: opacity var(--time);
     fill: var(--accent-txt-cl);
-}
 
-.register-checkbox:checked+.register-icon .register-icon-check {
+  .register-checkbox:checked+.register-icon & {
     opacity: 1;
 }
-
+}
 .register-form-agreement-text {
     font-weight: 400;
     font-size: 14px;
