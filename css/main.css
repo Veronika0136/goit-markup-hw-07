@@ -138,6 +138,10 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  transition: border-color var(--time);
+}
+.modal-btn:hover, .modal-btn:focus {
+  border-color: var(--accent-txt-cl);
 }
 
 .modal-btn-icon:hover {
@@ -296,10 +300,13 @@ body {
   color: var(--accent-txt-cl);
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .header-nav {
