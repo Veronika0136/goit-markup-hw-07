@@ -6,6 +6,8 @@
   --main-txt-cl: #757575;
   --accent-txt-cl: #2196f3;
   --subtitle-txt-cl: #030303;
+  --additional-txt-cl:#AFB1B8;
+  --additional-dark-txt-cl:#212121;
   /* bg colors */
   --dark-bg-cl: #2f303a;
   --light-bg-cl: #f5f4fa;
@@ -28,7 +30,7 @@
   overflow: hidden;
 }
 
-.clients-link, .socials__link, .socials__list, .special__overlay, .features__thumb, .btn, .footer-subs-form, .footer-socials-link, .footer-socials-list, .register-form-agreement, .modal-btn {
+.portfolio-overlay, .clients-link, .socials__link, .socials__list, .special__overlay, .features__thumb, .hero__btn, .footer-subs-form, .footer-socials-link, .footer-socials-list, .register-form-agreement, .modal-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,7 +162,7 @@ body {
   display: block;
   margin-bottom: 12px;
   text-align: center;
-  color: #212121;
+  color: var(--additional-dark-txt-cl);
 }
 
 .register-form-group {
@@ -534,7 +536,7 @@ body {
   margin-right: auto;
 }
 
-.btn {
+.hero__btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -553,7 +555,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: color var(--time), background var(--time);
 }
-.btn:hover, .btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   color: #ffffff;
   background: #188ce8;
 }
@@ -671,7 +673,7 @@ body {
 }
 
 .socials__link {
-  color: #afb1b8;
+  color: var(--additional-txt-cl);
   width: 44px;
   height: 44px;
   background-color: #ffffff;
@@ -693,7 +695,7 @@ body {
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #212121;
+  color: var(--additional-dark-txt-cl);
   margin-bottom: 50px;
 }
 
@@ -705,8 +707,8 @@ body {
 .clients-link {
   width: 170px;
   height: 92px;
-  color: #afb1b8;
-  border: 1px solid #afb1b8;
+  color: var(--additional-txt-cl);
+  border: 1px solid var(--additional-txt-cl);
   border-radius: 4px;
   transition: color var(--time), border-color var(--time);
 }
@@ -717,4 +719,108 @@ body {
 
 .clients-icon {
   fill: currentColor;
+}
+
+.portfolio-filtr {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.portfolio-filtr-btn {
+  background: var(--light-bg-cl);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  color: var(--additional-dark-txt-cl);
+  display: flex;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: var(--light-bg-cl);
+  transition: color var(--time), background-color var(--time), box-shadow var(--time);
+}
+.portfolio-filtr-btn:active {
+  background-color: var(--accent-txt-cl);
+  color: #ffffff;
+}
+.portfolio-filtr-btn:hover, .portfolio-filtr-btn:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  background-color: var(--accent-txt-cl);
+  color: #ffffff;
+}
+
+.btn-current {
+  background-color: var(--accent-txt-cl);
+  color: #ffffff;
+}
+
+.portfolio-list {
+  --itens: 3;
+  padding: 0px;
+}
+
+.portfolio-link {
+  display: block;
+  transition: box-shadow var(--time);
+}
+.portfolio-link:hover, .portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-item-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-overlay {
+  background-color: rgba(33, 150, 243, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  transform: translateY(100%);
+  transition: transform var(--time);
+}
+.portfolio-link:hover .portfolio-overlay {
+  transform: translateY(0);
+}
+
+.portfolio-overlay-txt {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5555555556;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  user-select: none;
+}
+
+.portfolio-wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.portfolio-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--additional-dark-txt-cl);
+}
+
+.portfolio-txt {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
 }/*# sourceMappingURL=main.css.map */
