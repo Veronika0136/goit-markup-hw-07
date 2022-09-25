@@ -32,7 +32,8 @@
     transform: translateY(100%);
     transition: transform var(--time);
 
-    .portfolio-link:hover & {
+    .portfolio-link:hover &,
+    .portfolio-link:focus & {
     transform: translateY(0);
      }
 }
