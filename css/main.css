@@ -788,7 +788,7 @@ body {
   transform: translateY(100%);
   transition: transform var(--time);
 }
-.portfolio-link:hover .portfolio-overlay {
+.portfolio-link:hover .portfolio-overlay, .portfolio-link:focus .portfolio-overlay {
   transform: translateY(0);
 }
 
